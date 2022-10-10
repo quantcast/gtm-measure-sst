@@ -1,7 +1,7 @@
 homepage: "https://www.quantcast.com"
 documentation: "https://help.quantcast.com"
 versions:
-  - sha: dea5a5a88c2f6baf4aea1616768c3706b11ca66b  template.tpl
-    changeNotes: Release Notes
+  - sha: 4f3923c9df76e9d7e08798b9afec7379657c3b52
+    changeNotes: Release
   - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
     changeNotes: Initial release.
