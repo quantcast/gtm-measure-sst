@@ -1,5 +1,5 @@
 homepage: "https://www.quantcast.com"
 documentation: "https://help.quantcast.com"
 versions:
-  - sha: 1276d8ff0587f29d1fbdd2c7ee88e30465ff3bad
+  - sha: 4fc5dee7617719b2eee5a006b806b0a217fc058e
     changeNotes: Initial Release
