@@ -1,5 +1,7 @@
 homepage: "https://www.quantcast.com"
 documentation: "https://help.quantcast.com"
 versions:
+  - sha: 52e4060de3f2671696d419428b5257aeb595bdc7
+    changeNotes: Bug fixes to triggered pixel call
   - sha: 4fc5dee7617719b2eee5a006b806b0a217fc058e
     changeNotes: Initial Release
