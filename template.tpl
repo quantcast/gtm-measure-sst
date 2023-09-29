@@ -157,7 +157,7 @@ function getFpa() {
   // If custom domain is not setup the closest we have to a fisrt party identifier is the
   // client_id that is added by gtm.
   if(!isOnCustomDomain) {
-    return ';fpa=G1-' + sha256Sync(clientId, {outputEncoding: 'hex'}) + ';fpan=0';
+    return '&fpa=G1-' + sha256Sync(clientId, {outputEncoding: 'hex'}) + '&fpan=0';
   }
   // If custom domain is setup we can actually use the http call to set a fisrt party cookie.
   // This persists better that ones set using javascript.
@@ -177,7 +177,7 @@ function getFpa() {
       samesite: 'none'
     });
   }
-  return ';fpa=' + fpa + ';fpan=' + fpan;
+  return '&fpa=' + fpa + '&fpan=' + fpan;
 }
 
 function removeFPA() {
@@ -197,7 +197,7 @@ function resolveUSPrivacyConsent(uspApiObj){
   if (getType(uspApiObj.uspString) !== 'string') {
     return { isAllowed: true, data: "" };
   }
-  return { isAllowed: true, data: uspApiObj.uspString ? ";us_privacy=" + uspApiObj.uspString : '' };  
+  return { isAllowed: true, data: uspApiObj.uspString ? '&us_privacy=' + uspApiObj.uspString : '' };  
 }
 
 // Parse TCF V2 consent object
@@ -217,9 +217,9 @@ function resolveGdprConsent(tcfApiObj){
   var gdprConsentObj = {};
   var gdprApplies = tcfApiObj.gdprApplies;
   if (!gdprApplies) {
-    gdprConsentObj.data = ";gdpr=0";
+    gdprConsentObj.data = "&gdpr=0";
   } else {
-    gdprConsentObj.data = tcfApiObj.tcString? ';gdpr=1;gdpr_consent=' + tcfApiObj.tcString : ';gdpr=0';
+    gdprConsentObj.data = tcfApiObj.tcString? '&gdpr=1&gdpr_consent=' + tcfApiObj.tcString : '&gdpr=0';
   }
   
   var purposes = tcfApiObj.purpose;
@@ -358,7 +358,7 @@ function getUh() {
       uh = sha256Sync(uid.toLowerCase(), {outputEncoding: 'hex'});
     }
   }
-  return ';uh=' + uh + ';uht=' + uht;
+  return '&uh=' + uh + '&uht=' + uht;
 }
 
 function objectToUrl(obj) {
@@ -367,7 +367,7 @@ function objectToUrl(obj) {
   }
   var str = '';
   Object.keys(obj).forEach((key)=> {
-    str += ";"+ key + "=" + encodeUriComponent(obj[key]);
+    str += "&"+ key + "=" + encodeUriComponent(obj[key]);
   });
   return str;
 }
@@ -384,18 +384,18 @@ const usPrivacyParams = consentData.usPrivacyParams;
 
 var url = 'https://pixel.' + target + '/pixel/' + pcode + '.gif' +
     '?r=' + generateRandom(0, MAX_USER_ID) +
-    ';source=gtmss' + 
-    ';labels=' + encodeUriComponent(labels) +
-    ';url=' + encodeUriComponent(pageLocation) +
-    ';d=' + encodeUriComponent(computeEffectiveTldPlusOne(pageLocation)) +
-    ';ref=' + encodeUriComponent(pageReferrer) +
+    '&source=gtmss' + 
+    '&labels=' + encodeUriComponent(labels) +
+    '&url=' + encodeUriComponent(pageLocation) +
+    '&d=' + encodeUriComponent(computeEffectiveTldPlusOne(pageLocation)) +
+    '&ref=' + encodeUriComponent(pageReferrer) +
     getUh() +
     (consentData.isAllowed ? getFpa() : '') +
-    (orderId? ';orderId=' + orderId : '') +
-    (revenue? ';revenue=' + revenue : '') +
+    (orderId? '&orderId=' + orderId : '') +
+    (revenue? '&revenue=' + revenue : '') +
     gdprConsentParams +
     usPrivacyParams +
-    ';et=' + getTimestamp() +
+    '&et=' + getTimestamp() +
     objectToUrl(additionalUrlParameters);
 
 logToConsole(url);
@@ -682,7 +682,7 @@ scenarios:
     // Mock pixel request
     mock('sendPixelFromBrowser', (url, response, options) => {
       assertThat(url).contains(mockFields.qacct + ".gif");
-      assertThat(url).contains(";labels="+ mockFields.labels);
+      assertThat(url).contains("&labels="+ mockFields.labels);
       return true;
     });
 
@@ -705,7 +705,7 @@ scenarios:
     mock('sendPixelFromBrowser', (url, response, options) => {
       var expectedUh = sha256Sync(mockEventData.user_id.toLowerCase(), {outputEncoding: 'hex'});
       var expectedUht = USERHASH_TYPE_EMAIL;
-      var expectedParamString = ';uh=' + expectedUh + ';uht=' + expectedUht;
+      var expectedParamString = '&uh=' + expectedUh + '&uht=' + expectedUht;
       assertThat(url).contains(expectedParamString);
       return true;
     });
@@ -720,7 +720,7 @@ scenarios:
     mock('sendPixelFromBrowser', (url, response, options) => {
       var expectedUh = mockEventData.user_id ;
       var expectedUht = USERHASH_TYPE_SHA256;
-      var expectedParamString = ';uh=' + expectedUh + ';uht=' + expectedUht;
+      var expectedParamString = '&uh=' + expectedUh + '&uht=' + expectedUht;
       assertThat(url).contains(expectedParamString);
       return true;
     });
@@ -736,7 +736,7 @@ scenarios:
     mock('sendPixelFromBrowser', (url, response, options) => {
       var expectedUh = "";
       var expectedUht = USERHASH_TYPE_UNKNOWN;
-      var expectedParamString = ';uh=' + expectedUh + ';uht=' + expectedUht;
+      var expectedParamString = '&uh=' + expectedUh + '&uht=' + expectedUht;
       assertThat(url).contains(expectedParamString);
       return true;
     });
@@ -762,8 +762,8 @@ scenarios:
     mockFields.revenue = "100.00";
 
     mock('sendPixelFromBrowser', (url, response, options) => {
-      assertThat(url).contains(";orderId=12345");
-      assertThat(url).contains(";revenue=100.00");
+      assertThat(url).contains("&orderId=12345");
+      assertThat(url).contains("&revenue=100.00");
       return true;
     });
 
@@ -774,7 +774,7 @@ scenarios:
 - name: can read a __qca cookie and pass it in the pixel call
   code: "mock('getRequestHeader', (key, response, options) => {\n  if(key === 'host')\
     \ {\n     return \"analytics.example.com\";\n  }\n});\n\nmock('sendPixelFromBrowser',\
-    \ (url, response, options) => {\n  var expectedParamString = ';fpa=G0-a_test_cookie-123456;fpan=0';\n\
+    \ (url, response, options) => {\n  var expectedParamString = '&fpa=G0-a_test_cookie-123456&fpan=0';\n\
     \  \n  assertThat(url).contains(expectedParamString);\n  return true;\n});\n\n\
     mock('getCookieValues', (cookieKey) => {\n  return [\"G0-a_test_cookie-123456\"\
     ];\n});\n\nrunCode(mockFields);\n\n\n"
@@ -789,7 +789,7 @@ scenarios:
 - name: can use client_id when custom domain is not configured
   code: "mock('getRequestHeader', (key, response, options) => {\n  if(key === 'host')\
     \ {\n     return \"something.appspot.com\";\n  }\n});\n\nmock('sendPixelFromBrowser',\
-    \ (url, response, options) => {\n  var expectedParamString = ';fpa=G1-a45993dc2138ceb9c9e581bb7053b0776920897fe02b68a720810f2071ea06b0;fpan=0';\n\
+    \ (url, response, options) => {\n  var expectedParamString = '&fpa=G1-a45993dc2138ceb9c9e581bb7053b0776920897fe02b68a720810f2071ea06b0&fpan=0';\n\
     \  \n  assertThat(url).contains(expectedParamString);\n  return true;\n});\n\n\
     runCode(mockFields);\n\n\n"
 - name: can parse consent object and fire pixel to quantcount
@@ -817,8 +817,8 @@ scenarios:
     \         \"restrictions\":{}\n      },\n      \"addtlConsent\":\"\"\n   },\n\
     \   \"uspApi\":{\n      \"version\":1,\n      \"uspString\":\"1---\"\n   }\n});\n\
     \n// test if the gdpr & usp_api strings are added to the URL\nmock('sendPixelFromBrowser',\
-    \ (url, response, options) => {\n  var gdprConsent = \";gdpr=1;gdpr_consent=TCFString\"\
-    ;\n  var uspConsent = \";us_privacy=1---\";\n  \n  assertThat(url).contains(gdprConsent);\n\
+    \ (url, response, options) => {\n  var gdprConsent = \"&gdpr=1&gdpr_consent=TCFString\"\
+    ;\n  var uspConsent = \"&us_privacy=1---\";\n  \n  assertThat(url).contains(gdprConsent);\n\
     \  assertThat(url).contains(uspConsent);\n  assertThat(url).contains(\"quantcount.com\"\
     );\n\n  return true;\n});\n\nrunCode(mockFields);\n\n// Verify that the tag finished\
     \ successfully.\nassertApi('gtmOnSuccess').wasCalled();"
@@ -837,8 +837,8 @@ scenarios:
 
     // test if the gdpr & usp_api strings are added to the URL
     mock('sendPixelFromBrowser', (url, response, options) => {
-      assertThat(url).contains(";gdpr=0");
-      assertThat(url).contains(";us_privacy=1---");
+      assertThat(url).contains("&gdpr=0");
+      assertThat(url).contains("&us_privacy=1---");
       assertThat(url).contains("quantcount.com");
 
       return true;
@@ -874,8 +874,8 @@ scenarios:
     :{}\n      },\n      \"addtlConsent\":\"\"\n   },\n   \"uspApi\":{\n      \"version\"\
     :1,\n      \"uspString\":\"1---\"\n   }\n});\n\n// test if the gdpr & usp_api\
     \ strings are added to the URL\nmock('sendPixelFromBrowser', (url, response, options)\
-    \ => {\n  var gdprConsent = \";gdpr=1;gdpr_consent=TCFString\";\n  var uspConsent\
-    \ = \";us_privacy=1---\";\n  \n  assertThat(url).contains(gdprConsent);\n  assertThat(url).contains(uspConsent);\n\
+    \ => {\n  var gdprConsent = \"&gdpr=1&gdpr_consent=TCFString\";\n  var uspConsent\
+    \ = \"&us_privacy=1---\";\n  \n  assertThat(url).contains(gdprConsent);\n  assertThat(url).contains(uspConsent);\n\
     \  assertThat(url).contains(\"quantserve.com\");\n\n  return true;\n});\n\nrunCode(mockFields);\n\
     \n// Verify that the tag finished successfully.\nassertApi('gtmOnSuccess').wasCalled();"
 - name: can parse consent when CMP missing (null values)
@@ -923,8 +923,8 @@ scenarios:
 
     // Mock pixel request
     mock('sendPixelFromBrowser', (url, response, options) => {
-      assertThat(url).contains(";some=thing");
-      assertThat(url).contains(";other=thing");
+      assertThat(url).contains("&some=thing");
+      assertThat(url).contains("&other=thing");
       return true;
     });
 
