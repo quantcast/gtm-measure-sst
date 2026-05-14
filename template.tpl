@@ -1,4 +1,4 @@
-___TERMS_OF_SERVICE___
+﻿___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -13,7 +13,7 @@ ___INFO___
   "id": "cvt_temp_public_id",
   "version": 1,
   "securityGroups": [],
-  "displayName": "Quantcast Measure",
+  "displayName": "Quantcast Measure and Live Tag",
   "categories": [
     "ANALYTICS",
     "ATTRIBUTION",
@@ -22,9 +22,9 @@ ___INFO___
   "brand": {
     "id": "quantcast",
     "displayName": "Quantcast",
-    "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAYAAAA5ZDbSAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAeKADAAQAAAABAAAAeAAAAAAI4lXuAAANh0lEQVR4Ae1cCbBUxRU9BBBRETcUhbCquLCJATUibqBs4gIqCkkwiZoyJUbLlEuVYpYylWhMhJjExKSKkIi7JoACKsqigihGcEFE+IAsghugKIKacxgn/zO+mbn95vV//7/qWzU1/7/pd/vee3q5fft2N8C4L79EoMxa4BuZ1SwotsMCAeCMN4QAcAA44xbIuHqhBweAM26BjKsXenAAOOMWyLh6oQcHgDNugYyrF3pwADjjFsi4eqEHB4AzboGMqxd6cAA44xbIuHqhBweAM26BjKsXenAAOOMWyLh6oQcHgDNugYyrF3pwADjjFsi4eqEHB4AzboGMqxd6cAA44xbIuHqhBweAM26BjKsXenAAOOMWyLh6oQcHgDNugYyr1ygN/VrvDpxwEHAgvw/YDWjJzwFNgX12BTZ+Bryzpfqzjn8/uw5YujENSd3rbMIxsTd167QXsP9Xeul7f+q3S0Pgg0+B97fyw+9X3wfmvQMsfBfY7ukijVoBuDGVPv5AYEBbftoAXfZzN9zSD4HHVgCP8jNzNfDJ5+48fL1xxN7A6dTrNH5ObAU0dbTqlm3AU9Tp768Bk6uAz75ITtIGPi9hacoWe1kX4JqjgRZswUnRJvby3/8XuI0f9fi0aBAb7I29gF4HJCfBu58A4xYCt74EbNleOV8vAO/CHnvJkcD138oNw5WLGc1Bw90tNMTYl4GPEzBGdC1ffzqkPYHtCRy9/9d/S+rJ2x+xYzwL3L2kMo6JA9yLSt/bH2i3Z2WCuby9fgsw8nHg8VUub7mXPYg+w8TTgD4chmuLbucoddUcIO6onegy6aLDgVlDaxdcGVpOzGNnAFcf5c/sJxPUBefXLrjS5oruwH3sMLtyuotDiQAsJ+oPfegknAo0iSlIHOFrvtOQMtxyPIc09jDN/UlRAzK6tgdHhzNzHn9SfF34DD0YePIsYF+uMlyp4iFaLeThgcCQDq5V+ys/Zw1w6iPJeKO39QauZC+qC7TkAy7BHgQ20PewkvCpiG4+rm6BK2W0Dv3zSRWptePlyzrXHXAl0KFcjt11ipteFfXgkYcCEzgkxqXFbJHTVwLyGNd+DLzLlrlXE3renFNb7QFo3utRgad61Wzgd/Sw45DW65MGAxr645DWttNX5YIYa+kESr+GHO87ESQFQboyFnBUizicuUKZAfz1Ndu7sQGWtzzzHE7+jov6zVy3/pZLm4lvAks+LC9kGwJ9LuegOGvpz+l6DpyUM3T5mqpLKHAx91yg2S7Vz6x/qcFq2fbk28CnZYIxx3D9fB1jBFp2NdBkb6SP2Xi632OL7sUCWLLMP89tHag7be9iq7thLsOQXMy7UnMa+4ae9Cq7AY0cetWyjcBh/wK2EWwrTRuSi0pZy6ucwo1XPxNvqdZ5H+D+AZSTDctK89YB336g/PLJwVTVVQ/t6AbuNrZkrVMveSoeuKpZESsZcPBkBjXYgq3UoTlw8RHW0gT2m+7g3v0Go1n3xQNXkr3CmPRx9wNPcEi30JQqYPSs8uCKl3MP1jzy6oW5ucQijOaiM6dQeA5ZSVFPTg9T2cu0OWEhzX8HTygf+lNrXzAc6Mb50Uq/nM+RZZ61dOlyjWjbCf2A4fRtCkkj4H+WA79gfS9uKPy1+P/OPXjUYXZwVe3lbGlJgiue89cD33tCf9lIu1aju5YvO7KTG7gTFicHrqTTjtLFHOXe4rSSJwH74FI6ZPcAZz3qBq54OAP8Y4Oh8sLds4TBj9fz/yX7Pbkq58xYuWrToxxd0rlcierfNedeSjCSpo844o2czjU8pzXZr8tEYNhU4OX34tXkNEQrFrv6IltFGprbjAfe49LHFylitWKUfaeqG421sIihWnC4X/cDtngOkxbqyTn3BY4kvmg/yqNlY6Xk1IMHtrVX9zd6zD7BlSTaEx7HJYmVBrUrXlK/WcGdvNwvuJIyCXDFxwngUgYSszx9wXlDe7W1QXcsItDGrcJS8mstaiU5OvWFzABrj7dva5taL9HLq9psK1tpKaW/zFpt43IsAwt7M1JWSNosUTaGhao2Ac+vt5SsG2XMALfeA9jDGNl5KsElkcVMM4z1Kex4CNfFhSTfYvfGhU+j/5+2Mvp5XX1qBljJcVZ62tijrPzKlXOpryXBLCQl/VlJocj6RGaAXYywjMNYbdJyh/qi9Ih6Vkz++pLdmZffC8BKHKtNkrcux85CSs8tJAVCrLS+lnWzylWsnBlg6xAtQ/teHhUqo30EJeBZqJIhWrptyCrAxvW/xcZeylh3mKJadF3XrRKDRekbyU+nDSykYIF1E8DCz1JGS5/mEcufqHejtip1esJC0k0RpvpEZoCtRpDySSa5W4zZfk9LqVyZqIaq3SYrKYOzPpEZ4CjDFFO0XbNiv8R7rvSZp8/mOrzIWtUF4CgnyaXxdnRoTPG0TfYtM8AuRjjJGPGyqKJc58ln5M78KCU2SmAXgKMaqnKmrNSXCQH1iaLsFSm/EuO0Q2ShU1pZSpUuo0RvbX4r1zm/CXBGe+Zz9f76ezojZKHtdLe1zVdIazhEW3Xrb6yrsI60/jcDvJXGsYYElQmpZLm4pNChEvq0AV9IP2GO8o86Vz/tui9gHTF0VHNTRCNVvpb12EtHhjq7O2R8VEuazl9mgCXelBU2IdXjriIQcUiZhi+cV/rE3rg+QL+vhsrRTMKz0rQS8isdxkpK/qsv5AZwlV2tHx7J5ZJx6ZLnOqxjrueWiyxpzXt/fx4i55njCyPyl/L8Cr+Vp1yMlCFijYad3YF5zRw5fFKzIg6la51OAK/iPLwoYg6LqlS7M2PZ01zoDeZJK1XFQlr3zqBnbT1svYayz+cQXYzkXSsV1ULKYdYJA53m90E9WjC75PtMd2IdUbtfLnU6i/inV+zsR3AO/W7EPFqMwyKm0wyfBihh3ULW6JV46UB1ObZ/edVSa65MT04ltzs2YAt3pSH9k87lbuwgFx0BvD4id6BOudNxyBlgJa8rmdxKfzyJTpCDV60rGq6cY+VuK6f48Z0G8P6x2D5CqeZL6exd08Mmg6WUwLjjRODwGmBqD/sCTkMLLwAeGsB8dPZuF2qIgTfd5PJCfjPhHM6XFtLFIxJQ55Be48dCz3MoVRJcUlcjKHdZd2CUoy9ZQFuPUd57sXe1Lm5Fr1/3h5QbIYrx0PPdG+X8iqicaP2uaUHAK/NTmSnKLNGUWY6ce7AYTmQ6p3UuVnmdGdap/7En2B2vK2YzuZ1Gq5Q09ypvy0pTV/Jc0Spr6Vy5i+lQzh7K0wkt3d7Ll1Z0bA7ftx7B1Vr8N4oP5BmU+HZKm63Jpzc92BlnAY0JngtpW+9XLzLn983yLXBPzkPPDAM6x/RYNZfrnPDMNS4Ssj72FB0+s6bx1OT+0Fu5fO05a+lLaEgoQarn2qOB8w9xO2+lA3xKAV6+uQTzr36KDbDe10Urd55cvpJiJV5cnzs+qqFGAX/NlTrRpx0bBRR0JdGx7BVWT7mwnjHzgJ9zeI5Dg9sB/x5UHUVz5aF7sORPvMxVxzrqpnBozeOjXdhodVeYy6nCvAyjngDGL87/V/q7IoDFWsPu5d1KV5LGr4q69WPvrWRe1HEXH55yJfZ4YCmP0061c7AM4yW56QaYxzlv1TVSKqzLMipK/rEL3RLro3gk+Ux+j+txmYoB1oGpIVM4ZLyepCqV89Lwp0thKiU5ezfOtUe5Kq2v2PtKRT7hodw1iMXKRD13XiZFMRHIjyzP3b+oGHF+9yeqbG0+0zUJXF3AJa02Sr5ZdNLmrstdxagARG2TVi3DHit//DVKrop7cE2muoKvL+c9ORV1hcb0Ar7jEE0rJrfi2D3utYczi/FxfX7rAmDE9Pg3BiUKsITXkkSHra97NtejXRVKuryWSlHHVeLUI29f1yacTyfnFYZVfdIqLoGGs56f0o5lVlslxajYiy7FXetY3TGljzUprhS//G/vcTk1qQrQrk4pvh9uzYFRahcpz9P1W0O/rrLQ1qGmgqRIusm5u4U9N4kbdb0CnFdaYbiTmcaz4zrhtoBLik2eh+6jfHgZoGWC5lTN+8oc0VUOUcEWhUaHTAbedIib5+ty+RbQupT09Da5j6JZrt67dtB0RbKO3D5CHZVckRTVCsCFwuqeqD70cpW5oYT6/Ef7xzotuJpDodJoVuvDvxUfVnw6Sm/tVo3vt3MNU6q4TzwtOntj55LJ/6dRS435/xeCUz9dBp6/EFwBkB0f6qlh/jk6bws2lL9yKa6kqQAcV9hi743hMHnTMblff80w6PXPRTeGYu9n+TkHz/pPP2M4UgfIZq+t/H7l+m+NnTXIRA/eWaXwX00LJL5Mqsk8/J2+BQLA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4lCAB7NW/6zAPA6WPgVYIAsFfzps88AJw+Bl4l+B+TrEVh9UYg2wAAAABJRU5ErkJggg\u003d\u003d"
+    "thumbnail": "data:image/png;base64,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"
   },
-  "description": "Server Side Template for Quantcast Measure integration.",
+  "description": "Server Side Template for Quantcast Measure and Live Tag integration.",
   "containerContexts": [
     "SERVER"
   ]
@@ -123,12 +123,15 @@ const getRequestHeader = require('getRequestHeader');
 const DOMAIN_QSERVE = 'quantserve.com';
 const DOMAIN_QCOUNT = 'quantcount.com';
 const FPA_COOKIE = '__qca';
+const FPID_COOKIE = 'FPID';
+const GA_COOKIE = '_ga';
 const MAX_USER_ID = 2147483647;
 const COOKIE_EXP_TIME = 33868800;
 const USERHASH_TYPE_EMAIL = 0;
 const USERHASH_TYPE_SHA256 = 1;
 const USERHASH_TYPE_UNKNOWN = 2;
 const VALID_SHA_CHARACTERS = "abcdefABCDEF0123456789";
+const VERSION = 1;
 
 // Read Request Fields
 const host = getRequestHeader('host');
@@ -148,6 +151,27 @@ const pageReferrer = events.page_referrer;
 const uid          = events.user_id || '';
 const cmpConsent   = events.cmpConsents;
 const clientId     = events.client_id;
+
+// Extract browser client id
+var browserClientId = getCookieValues(GA_COOKIE)[0] || '';
+if (browserClientId.indexOf('.') !== -1) {
+  // Most GA cookies look like GA1.1.12345.6789.
+  const parts = browserClientId.split('.');
+  if (parts.length >= 4) {
+    // "GA1.1.12345.6789" -> "12345.6789"
+    browserClientId = parts[2] + '.' + parts[3];
+  }
+}
+
+// Extract FPID
+var fpid = getCookieValues(FPID_COOKIE)[0] || '';
+if (fpid.indexOf('.') !== -1) {
+  const fpidParts = fpid.split('.');
+  if (fpidParts.length >= 4) {
+    // "FPID2.2.G0-12345.6789" -> "G0-12345.6789"
+    fpid = fpidParts[2] + '.' + fpidParts[3];
+  }
+}
 
 const pageHostname = computeEffectiveTldPlusOne(pageLocation);
 const serverHostname = computeEffectiveTldPlusOne(host);
@@ -389,6 +413,8 @@ var url = 'https://pixel.' + target + '/pixel/' + pcode + '.gif' +
     '&url=' + encodeUriComponent(pageLocation) +
     '&d=' + encodeUriComponent(computeEffectiveTldPlusOne(pageLocation)) +
     '&ref=' + encodeUriComponent(pageReferrer) +
+    '&_gacid=' + browserClientId +
+    (fpid ? '&_gafpid=' + encodeUriComponent(fpid) : '') +
     getUh() +
     (consentData.isAllowed ? getFpa() : '') +
     (orderId? '&orderId=' + orderId : '') +
@@ -396,6 +422,7 @@ var url = 'https://pixel.' + target + '/pixel/' + pcode + '.gif' +
     gdprConsentParams +
     usPrivacyParams +
     '&et=' + getTimestamp() +
+    '&v=' + VERSION +
     objectToUrl(additionalUrlParameters);
 
 logToConsole(url);
@@ -437,6 +464,14 @@ ___SERVER_PERMISSIONS___
               {
                 "type": 1,
                 "string": "__qca"
+              },
+              {
+                "type": 1,
+                "string": "FPID"
+              },
+              {
+                "type": 1,
+                "string": "_ga"
               }
             ]
           }
@@ -772,12 +807,13 @@ scenarios:
     // Verify that the tag finished successfully.
     assertApi('gtmOnSuccess').wasCalled();
 - name: can read a __qca cookie and pass it in the pixel call
-  code: "mock('getRequestHeader', (key, response, options) => {\n  if(key === 'host')\
-    \ {\n     return \"analytics.example.com\";\n  }\n});\n\nmock('sendPixelFromBrowser',\
-    \ (url, response, options) => {\n  var expectedParamString = '&fpa=G0-a_test_cookie-123456&fpan=0';\n\
-    \  \n  assertThat(url).contains(expectedParamString);\n  return true;\n});\n\n\
-    mock('getCookieValues', (cookieKey) => {\n  return [\"G0-a_test_cookie-123456\"\
-    ];\n});\n\nrunCode(mockFields);\n\n\n"
+  code: "const FPA_COOKIE = '__qca';\n\nmock('getRequestHeader', (key, response, options)\
+    \ => {\n  if(key === 'host') {\n     return \"analytics.example.com\";\n  }\n\
+    });\n\nmock('sendPixelFromBrowser', (url, response, options) => {\n  var expectedParamString\
+    \ = '&fpa=G0-a_test_cookie-123456&fpan=0';\n  \n  assertThat(url).contains(expectedParamString);\n\
+    \  return true;\n});\n\nmock('getCookieValues', (cookieKey) => {\n  if (cookieKey\
+    \ === FPA_COOKIE) { \n    return [\"G0-a_test_cookie-123456\"];\n  }\n  return\
+    \ [];\n});\n\nrunCode(mockFields);\n"
 - name: can set a __qca cookie and pass it in the pixel call
   code: "mock('getRequestHeader', (key, response, options) => {\n  if(key === 'host')\
     \ {\n     return \"analytics.example.com\";\n  }\n});\n\nmock('sendPixelFromBrowser',\
@@ -934,6 +970,18 @@ scenarios:
 
     // Verify that the tag finished successfully.
     assertApi('gtmOnSuccess').wasCalled();
+- name: can read a FPID cookie and pass it in the pixel call
+  code: "const FPID_COOKIE = 'FPID';\n\nmock('sendPixelFromBrowser', (url, response,\
+    \ options) => {\n  var expectedParamString = '&_gafpid=G0-12345.6789';\n  \n \
+    \ assertThat(url).contains(expectedParamString);\n  return true;\n});\n\nmock('getCookieValues',\
+    \ (cookieKey) => {\n  if (cookieKey === FPID_COOKIE) { \n    return [\"FPID2.2.G0-12345.6789\"\
+    ];\n  }\n  return [];\n});\n\nrunCode(mockFields);\n\nassertApi('gtmOnSuccess').wasCalled();"
+- name: can read a _ga cookie and pass it in the pixel call
+  code: "const GA_COOKIE = '_ga';\n\nmock('sendPixelFromBrowser', (url, response,\
+    \ options) => {\n  var expectedParamString = '&_gacid=12345.6789';\n  \n  assertThat(url).contains(expectedParamString);\n\
+    \  return true;\n});\n\nmock('getCookieValues', (cookieKey) => {\n  if (cookieKey\
+    \ === GA_COOKIE) { \n    return [\"GA1.1.12345.6789\"];\n  }\n  return [];\n});\n\
+    \nrunCode(mockFields);\n\nassertApi('gtmOnSuccess').wasCalled();"
 setup: "const JSON = require('JSON');\n\nconst mockEventData = {\n  page_location:\"\
   example.com/path/to/page\",\n  ip_override:\"1.2.3.4\",\n  user_agent:\"Mozilla/5.0\
   \ (platform; rv:geckoversion) Gecko/geckotrail Firefox/firefoxversion\",\n  client_id:\
@@ -945,3 +993,5 @@ setup: "const JSON = require('JSON');\n\nconst mockEventData = {\n  page_locatio
 ___NOTES___
 
 Created on 10/10/2022, 15:40:07
+
+

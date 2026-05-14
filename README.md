@@ -4,3 +4,4 @@ You can use this tag for the Google Tag Manager Server Side container to set up 
 
 It works based on Universal Analytics or Google Analytics 4 requests inside the Google Tag Manager Server Side container.
 
+Check out [Developers Guide](DEVELOPMENT.md) for more details.
