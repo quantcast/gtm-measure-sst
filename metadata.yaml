@@ -1,6 +1,8 @@
 homepage: "https://www.quantcast.com"
 documentation: "https://help.quantcast.com"
 versions:
+  - sha: 9e4a6e135ab7ea1756e8e3a09ce58b51f3a867d7
+    changeNotes: Adds GTM integration guides to readme
   - sha: 085524386c4f645450c8c1e711b03b37895a8f3c
     changeNotes: Introducing support for Verified By Q. Seamlessly integrate your Quantcast conversion data with Google Analytics.
   - sha: 52e4060de3f2671696d419428b5257aeb595bdc7
