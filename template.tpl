@@ -413,8 +413,8 @@ var url = 'https://pixel.' + target + '/pixel/' + pcode + '.gif' +
     '&url=' + encodeUriComponent(pageLocation) +
     '&d=' + encodeUriComponent(computeEffectiveTldPlusOne(pageLocation)) +
     '&ref=' + encodeUriComponent(pageReferrer) +
-    '&_gacid=' + browserClientId +
-    (fpid ? '&_gafpid=' + encodeUriComponent(fpid) : '') +
+    (consentData.isAllowed ? '&_gacid=' + browserClientId : '') +
+    (consentData.isAllowed && fpid ? '&_gafpid=' + encodeUriComponent(fpid) : '') +
     getUh() +
     (consentData.isAllowed ? getFpa() : '') +
     (orderId? '&orderId=' + orderId : '') +
