@@ -115,7 +115,6 @@ const logToConsole = require('logToConsole');
 const sendPixelFromBrowser = require('sendPixelFromBrowser');
 const getCookieValues = require('getCookieValues');
 const setCookie = require('setCookie');
-const returnResponse = require('returnResponse');
 const getAllEventData = require('getAllEventData');
 const getRequestHeader = require('getRequestHeader');
 
@@ -433,11 +432,7 @@ if(sendPixelFromBrowser(url)) {
   logToConsole("sending pixel from browser successful");
 } else {
   data.gtmOnFailure();
-}  
-
-// Flush response back to browser for setting cookies
-returnResponse();
-
+}
 
 ___SERVER_PERMISSIONS___
 
