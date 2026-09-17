@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -434,6 +434,7 @@ if(sendPixelFromBrowser(url)) {
   data.gtmOnFailure();
 }
 
+
 ___SERVER_PERMISSIONS___
 
 [
@@ -475,16 +476,6 @@ ___SERVER_PERMISSIONS___
     },
     "clientAnnotations": {
       "isEditedByUser": true
-    },
-    "isRequired": true
-  },
-  {
-    "instance": {
-      "key": {
-        "publicId": "return_response",
-        "versionId": "1"
-      },
-      "param": []
     },
     "isRequired": true
   },
