@@ -1,6 +1,8 @@
 homepage: "https://www.quantcast.com"
 documentation: "https://help.quantcast.com"
 versions:
+  - sha: 585632028e1c6837c52d589ad9d27d423b621be9
+    changeNotes: Fix orderid URL parameter name for consistency with Quantcast LiveTag pixel events
   - sha: 6a026de1d4de9e392c5f28873db1260ef55b1bd2
     changeNotes: bugfix - Remove unnecessary call to returnResponse()
   - sha: d26e0718ff04905218f8d301f1de77279eee8255
