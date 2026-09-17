@@ -416,7 +416,7 @@ var url = 'https://pixel.' + target + '/pixel/' + pcode + '.gif' +
     (consentData.isAllowed && fpid ? '&_gafpid=' + encodeUriComponent(fpid) : '') +
     getUh() +
     (consentData.isAllowed ? getFpa() : '') +
-    (orderId? '&orderId=' + orderId : '') +
+    (orderId? '&orderid=' + orderId : '') +
     (revenue? '&revenue=' + revenue : '') +
     gdprConsentParams +
     usPrivacyParams +
@@ -792,7 +792,7 @@ scenarios:
     mockFields.revenue = "100.00";
 
     mock('sendPixelFromBrowser', (url, response, options) => {
-      assertThat(url).contains("&orderId=12345");
+      assertThat(url).contains("&orderid=12345");
       assertThat(url).contains("&revenue=100.00");
       return true;
     });
