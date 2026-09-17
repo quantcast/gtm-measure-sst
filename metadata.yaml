@@ -1,6 +1,8 @@
 homepage: "https://www.quantcast.com"
 documentation: "https://help.quantcast.com"
 versions:
+  - sha: 7aa240cf46bd3e0b43dd32cd5073652d312a2aca
+    changeNotes: Fix template file format and remove the no-longer needed permission
   - sha: 585632028e1c6837c52d589ad9d27d423b621be9
     changeNotes: Fix orderid URL parameter name for consistency with Quantcast LiveTag pixel events
   - sha: 6a026de1d4de9e392c5f28873db1260ef55b1bd2
